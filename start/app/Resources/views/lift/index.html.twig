@@ -63,11 +63,13 @@
     </div>
 {% endblock %}
 
-{%  block javascripts %}
+{% block javascripts %}
     {{ parent() }}
     <script>
-        $('.js-delete-rep-log').on('click', function () {
-            console.log('Todo delete this item');
-        });
+        $(document).ready(function() {
+            $('.js-delete-rep-log').on('click', function () {
+                console.log('Todo delete this item');
+            });
+        })
     </script>
 {%  endblock %}

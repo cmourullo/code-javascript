@@ -69,7 +69,8 @@
         $(document).ready(function() {
             var $table = $('.js-rep-log-table');
 
-            $('.js-delete-rep-log').on('click', function () {
+            $('.js-delete-rep-log').on('click', function (e) {
+                e.preventDefault();
                 console.log('Todo delete this item');
             });
 
